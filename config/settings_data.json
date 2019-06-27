@@ -20,6 +20,19 @@
     "type_accent_size": "16px",
     "type_accent_transform": true,
     "type_accent_spacing": true,
+    "favicon": "",
+    "share_image": "",
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_google_plus_link": "",
+    "social_instagram_link": "",
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "social_rss_link": "",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
@@ -39,15 +52,21 @@
     "checkout_button_color": "#e42c00",
     "checkout_error_color": "#e42c00",
     "collections_center_grid_link": false,
+    "favicon_enable": false,
     "sections": {
       "header": {
         "type": "header",
         "settings": {
           "header_search_enable": true,
+          "logo": "",
           "logo_max_width": "450",
+          "nav_menu": "main-menu",
           "nav_below_logo": false,
           "left_aligned_logo": true,
-          "show_header_lines": true
+          "show_header_lines": true,
+          "show_announcement": true,
+          "header_text": "Announce something here",
+          "announcement_link": ""
         }
       },
       "footer": {
@@ -72,7 +91,9 @@
           },
           "footer-3": {
             "type": "newsletter",
-            "settings": {}
+            "settings": {
+              "subtext": "<p>Sign up for the latest news, offers and styles<\/p>"
+            }
           }
         },
         "block_order": [
@@ -90,11 +111,17 @@
         "blocks": {
           "slider-0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "",
+              "link": ""
+            }
           },
           "slider-1": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "",
+              "link": ""
+            }
           }
         },
         "block_order": [
@@ -108,33 +135,46 @@
           "slider_home_transition": "fade"
         }
       },
-      "featured-collection": {
-        "type": "featured-collection",
-        "settings": {
-          "featured_collection": "frontpage",
-          "num_per_row": 4,
-          "num_rows": 1
-        }
-      },
       "collection-list": {
         "type": "collection-list",
-        "settings": {}
+        "settings": {
+          "title": "Collection list"
+        }
       },
       "feature-row-0": {
         "type": "feature-row",
         "settings": {
-          "layout": "right"
+          "image": "",
+          "layout": "right",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "feature-row-1": {
         "type": "feature-row",
         "settings": {
-          "layout": "left"
+          "image": "",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "map": {
         "type": "map",
-        "settings": {}
+        "settings": {
+          "heading": "Our store",
+          "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+          "map_address": "80 Spadina Ave, Toronto",
+          "button": "Directions",
+          "show_pin": true,
+          "api_key": "",
+          "image": "",
+          "position": "center center"
+        }
       },
       "product-template": {
         "type": "product-template",
@@ -143,11 +183,16 @@
           "product_quantity_enable": true,
           "product_image_zoom_type": "zoom-in",
           "product_thumbnails_position": "below",
+          "show_extra_tab": false,
+          "extra_tab_content": "",
           "social_sharing": true,
           "product_related_enable": true,
           "vendor_enable": true,
           "show_sale_circle": true,
-          "show_sold_out_circle": true
+          "show_sold_out_circle": true,
+          "center_grid_link": false,
+          "enable_payment_button": true,
+          "add_to_cart_width": "small"
         }
       },
       "collection-template": {
@@ -164,12 +209,10 @@
     },
     "content_for_index": [
       "slider",
-      "featured-collection",
       "feature-row-0",
       "feature-row-1",
       "map"
-    ],
-    "favicon_enable": false
+    ]
   },
   "presets": {
     "Vintage": {

@@ -86,7 +86,7 @@
 
   {% section 'header' %}
 
-  {% if collection.image != blank %}
+  {% if collection.image != blank and template == 'collection' %}
     <div class="collection-banner">
       <img src='{{ collection.image | img_url: 'master' }}'>
     </div>
